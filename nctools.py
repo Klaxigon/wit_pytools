@@ -146,18 +146,11 @@ def nctagedit(target, tagname, newtagname):
 #     else:
 #         print('Source not found - skipped: ' + sourcedir)
 
-
-# -------------------------------------------------------------------
-# MAILSORT SUPPORT (NEU: msg + eml)
-# -------------------------------------------------------------------
-
-# vorhandener Parser
 try:
     from parse_msg import parse_msg
 except ImportError:
     parse_msg = None
 
-# neuer Parser
 try:
     from parse_eml import parse_eml
 except ImportError:
