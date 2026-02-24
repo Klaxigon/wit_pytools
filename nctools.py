@@ -1,7 +1,7 @@
 import os
 import subprocess
 from eliot import start_action, to_file, log_message
-from wit_pytools.config import readconfig  # fehlte im Original
+from wit_pytools.config import readconfig
 
 
 def getncroot():
